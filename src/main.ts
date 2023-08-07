@@ -13,7 +13,9 @@ const favoriteMovie = 'Blue Velvet';
 const favoriteBook = 'Jenseits von Gut und Böse';
 
 // task 7 - display a list of colors
-const colors = ['red', 'blue', 'green', 'orange', 'purple', 'tan', 'pink'];
+const colors = ['RED', 'blue', 'green', 'orange', 'purple', 'tan', 'pink'];
+// colors.sort((a, b) => a.toLowerCase() > b.toLowerCase() ? 1 : -1);
+colors.sort((a, b) => b.toLowerCase() < a.toLowerCase() ? 1 : -1);
 let colorHtml = '';
 //for-of
 // for (const color of colors) {
@@ -28,6 +30,26 @@ let colorHtml = '';
 
 // forEach
 // colors.filter(m => m.length <= 6).forEach(m => colorHtml += `<li>${m}</li>`);
+
+// task 8 - sort students
+const students = [
+	{
+		name: "Hans",
+		score: 89
+	},
+	{
+		name: "Alice",
+		score: 77
+	},
+	{
+		name: "Roger",
+		score: 83
+	}
+];
+
+const capitalizeFirstLetter = (text: string) => {
+	return `${text.charAt(0).toUpperCase()}${text.slice(1).toLowerCase()}` 
+}
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 <h1>Exercise: PB-Console</h1>
@@ -62,6 +84,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 <p>There are ${colors.length} colors.</p>
 <ul>
 	<!-- ${colors.map(m => `<li>${m}</li>`).join('')} -->
-	${colors.reduce((prev, curr) => prev + `<li>${curr}</li>`, '' )}
+	${colors.reduce((prev, curr) => prev + `<li>${capitalizeFirstLetter(curr)}</li>`, '' )}
 </ul>
+
+<h2>Task 8</h2>
+<p>The average score is: ${students.reduce((totalScore,student) => totalScore + student.score, 0) / students.length}</p>
 `
