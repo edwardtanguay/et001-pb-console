@@ -39,6 +39,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<li>${favoriteMovie}</li>
 	<li>${favoriteBook}</li>
 </ul>
+<p>My name is ${firstName} ${lastName}, I live in ${city}, my favorite band is ${favoriteBand}, my favorite movie is ${favoriteMovie}, and my favorite book is ${favoriteBook}.</p>
 
 
 
