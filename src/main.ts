@@ -3,6 +3,14 @@ import './style.scss';
 const task1 = 2;
 const task2 = "hello";
 const number = 5;
+const isOnline = true;
+
+const firstName = 'Jake';
+const lastName = 'Rolanding';
+const city = 'Paris';
+const favoriteBand = 'Hatari';
+const favoriteMovie = 'Blue Velvet';
+const favoriteBook = 'Jenseits von Gut und Böse'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 <h1>Exercise: PB-Console</h1>
@@ -18,6 +26,19 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 
 <h2>Task 4</h2>
 <p>${typeof number}</p>
+
+<h2>Task 5</h2>
+<p>${isOnline}</p>
+
+<h2>Task 6</h2>
+<ul>
+	<li>${firstName}</li>
+	<li>${lastName}</li>
+	<li>${city}</li>
+	<li>${favoriteBand}</li>
+	<li>${favoriteMovie}</li>
+	<li>${favoriteBook}</li>
+</ul>
 
 
 
