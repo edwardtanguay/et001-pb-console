@@ -62,5 +62,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 <p>There are ${colors.length} colors.</p>
 <ul>
 	<!-- ${colors.map(m => `<li>${m}</li>`).join('')} -->
+	${colors.reduce((prev, curr) => prev + `<li>${curr}</li>`, '' )}
 </ul>
 `
