@@ -1,6 +1,15 @@
-import './style.scss'
+import './style.scss';
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+const task1 = 2;
+const task2 = "hello";
+
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 <h1>Exercise: PB-Console</h1>
-<p>test</p>
+
+<h2>Task 1</h2>
+<p>${task1}</p>
+
+<h2>Task 1</h2>
+<p>${task2}</p>
+
 `
