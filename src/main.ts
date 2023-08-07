@@ -13,7 +13,7 @@ const favoriteMovie = 'Blue Velvet';
 const favoriteBook = 'Jenseits von Gut und Böse';
 
 // task 7 - display a list of colors
-const colors = ['RED', 'blue', 'green', 'orange', 'purple', 'tan', 'pink'];
+const colors = ['RED', 'blue', 'green', 'brown', 'purple'];
 // colors.sort((a, b) => a.toLowerCase() > b.toLowerCase() ? 1 : -1);
 colors.sort((a, b) => b.toLowerCase() < a.toLowerCase() ? 1 : -1);
 // let colorHtml = '';
@@ -39,7 +39,7 @@ const students = [
 	},
 	{
 		name: "Alice",
-		score: 77
+		score: 79
 	},
 	{
 		name: "Roger",
@@ -84,7 +84,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 <p>There are ${colors.length} colors.</p>
 <ul>
 	<!-- ${colors.map(m => `<li>${m}</li>`).join('')} -->
-	${colors.reduce((prev, curr) => prev + `<li>${capitalizeFirstLetter(curr)}</li>`, '' )}
+	${colors.reduce((prev, curr) => prev + `<li style="color:${curr}">${capitalizeFirstLetter(curr)}</li>`, '' )}
 </ul>
 
 <h2>Task 8</h2>
