@@ -16,7 +16,7 @@ const favoriteBook = 'Jenseits von Gut und Böse';
 const colors = ['RED', 'blue', 'green', 'orange', 'purple', 'tan', 'pink'];
 // colors.sort((a, b) => a.toLowerCase() > b.toLowerCase() ? 1 : -1);
 colors.sort((a, b) => b.toLowerCase() < a.toLowerCase() ? 1 : -1);
-let colorHtml = '';
+// let colorHtml = '';
 //for-of
 // for (const color of colors) {
 // 	colorHtml += `<li style="color: ${color}">${color}</li>`;
