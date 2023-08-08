@@ -52,7 +52,7 @@ const capitalizeFirstLetter = (text: string) => {
 }
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
-<h1>Exercise: PB-Console</h1>
+<h1>Exercise: PB-language-console-log</h1>
 
 <h2>Task 1</h2>
 <p>${task1}</p>
